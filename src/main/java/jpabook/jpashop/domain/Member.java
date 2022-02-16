@@ -20,6 +20,7 @@ public class Member {
     @Embedded
     private Address address;
 
-    @OneToMany
+    // Order 클래스의 member 필드에 의해서 맵핑된다는 뜻(읽기 전용)
+    @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 }
