@@ -10,7 +10,7 @@ import javax.persistence.Embedded;
 public class Address {
 
     private String city;
-    private String streat;
+    private String street;
     private String zipcode;
     
     // 기본 생성자 필수
@@ -20,7 +20,7 @@ public class Address {
 
     public Address(String city, String streat, String zipcode) {
         this.city = city;
-        this.streat = streat;
+        this.street = streat;
         this.zipcode = zipcode;
     }
 }
